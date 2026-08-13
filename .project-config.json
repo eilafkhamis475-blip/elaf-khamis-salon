@@ -1,0 +1,46 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "server",
+    "db",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://4AGnViXqz8qGXdU.64440fff79b3:YgIa09Pds1RRFpr8CD42@gateway03.us-east-1.prod.aws.tidbcloud.com:4000/8PAZtBsan6RSG55EZR6r52?ssl={\"rejectUnauthorized\":true}",
+    "DRIZZLE_DATABASE_URL": "mysql://4AGnViXqz8qGXdU.64440fff79b3:YgIa09Pds1RRFpr8CD42@gateway03.us-east-1.prod.aws.tidbcloud.com:4000/8PAZtBsan6RSG55EZR6r52?ssl={\"rejectUnauthorized\":true}",
+    "MANUS_WEBDEV_PROJECT_ID": "8PAZtBsan6RSG55EZR6r52"
+  },
+  "experiments": [
+    "no_db_push"
+  ],
+  "git_remote": {
+    "repo_url": "https://7f0548f6b28a1758d9bf7be630d36cb4.artifacts.cloudflare.net/git/prod/8PAZtBsan6RSG55EZR6r52.git",
+    "expiration": "2026-08-14T14:13:13.126Z",
+    "token": "art_v2_x_5d361d142ffe5a3a5ed6bfd99f60d24f5e910a6f?expires=1786716793",
+    "backend": "GIT_BACKEND_ARTIFACTS"
+  },
+  "name": "elaf-khamis-salon",
+  "path": "/home/ubuntu/elaf-khamis-salon",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "n7HpyKmiABMFi9Yv7x7JJJ",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "GOOGLE_APPS_SCRIPT_SHARED_SECRET": "Mm5550770$",
+    "GOOGLE_APPS_SCRIPT_WEB_APP_URL": "https://script.google.com/macros/s/AKfycbxRwg8PNTrD8yagCqE8XXybdG8LOYuwG6JWbhXfIQKKdugajad4tWn6p53t9bAEGrVHXw/exec",
+    "JWT_SECRET": "an8CBWfvHTEtJNBbXcsnxb",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Mohmmed Oun",
+    "OWNER_OPEN_ID": "cfHxRZswYp6EwPEH94ZD99",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "9415f938-2cc6-4056-84a4-0c0762b822e1",
+    "VITE_APP_ID": "8PAZtBsan6RSG55EZR6r52",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663831632281/zEUUkXRyDZclMMSi.png",
+    "VITE_APP_TITLE": "صالون إيلاف خميس للتجميل",
+    "VITE_FRONTEND_FORGE_API_KEY": "mWJdfAHSDkdkK49kSmYeYb",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-db-user",
+  "test_command": "pnpm test"
+}

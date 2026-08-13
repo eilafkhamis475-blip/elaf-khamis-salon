@@ -1,0 +1,90 @@
+# Project TODO
+
+- [ ] Create a clean downloadable ZIP archive of the complete project source code.
+
+- [x] Review the attached consultant brief and translate its high-value recommendations into a coherent salon-platform enhancement plan.
+- [x] Apply the selected Arabic-only identity improvement from the consultant review to the public and protected interface chrome.
+- [x] Implement the selected creative experience and operational improvements from the attached brief, including Arabic-only identity polish, mobile-first controls, appointment status visibility, location details, and financial follow-up.
+
+- [x] Define the salon scheduling model, booking statuses, service durations, working hours, and collision rules.
+- [x] Complete protected server procedures for booking, client, staff, service-record, and booking-activity administration.
+- [x] Prevent booking overlaps server-side and return only genuinely available client-facing time slots.
+- [x] Build the public Arabic luxury landing page with the exact salon name "صالون إيلاف خميس" and the exact booking CTA "احجزي موعدكِ الآن".
+- [x] Create service cards for تسريح, صبغات, معالجات, and باقة عروس, including price and estimated duration.
+- [x] Create the strictly sequential four-step booking flow, with selection, date/time, client details, and unique-reference confirmation.
+- [x] Add a WhatsApp confirmation link to 0922119292 with a pre-filled booking summary and unique reference.
+- [x] Build a protected, administrator-only dashboard with daily, weekly, and monthly booking KPIs.
+- [x] Build daily and weekly appointment calendar views with client names, service time blocks, and booking status.
+- [x] Implement administrator controls to accept, edit, cancel, and reschedule bookings.
+- [x] Build a client CRM showing contact details and prior appointment history.
+- [x] Implement the internal 24-hour appointment-reminder workflow and a one-click WhatsApp reminder message for the administrator.
+- [x] Provide an optional configuration path for fully automated WhatsApp delivery when a WhatsApp Business API provider is connected.
+- [x] Add and run unit tests for duration blocking, overlapping-slot detection, booking creation, and protected administration rules.
+- [x] Verify the public booking flow and management dashboard at desktop and mobile widths.
+- [x] Document the initial services, administrator access method, booking workflow, and WhatsApp automation limitation.
+- [x] Enforce a maximum of 9 companions in both the booking interface and server-side booking validation.
+- [x] Add the client area/address field to the booking form and include it in the encoded WhatsApp booking summary.
+- [x] Format the WhatsApp booking message with the approved Arabic greeting, booking details, and confirmation request.
+- [x] Make the appointment cancellation and rescheduling lead time configurable by the administrator.
+- [x] Add administrator-only procedures for service and stylist records plus appointment activity history.
+- [x] Make booking availability resource-aware when the salon enables multiple stylists, while retaining single-chair blocking by default.
+- [x] Verify the bootstrap service catalogue contains all four required categories and add graceful service-menu empty and error states.
+- [x] Add robust telephone validation and visible bootstrap and availability error states to the sequential booking flow.
+- [x] Add a unit test proving the booking API rejects companion counts above 9.
+- [x] Add a daily calendar mode alongside the weekly administration calendar.
+- [x] Expand the CRM interface with each client’s previous appointment timeline.
+- [x] Add a success-path booking-creation test using controlled booking persistence helpers.
+- [x] Capture authenticated mobile verification for the protected administration dashboard with rendered data after login.
+- [x] Add and run a controlled end-to-end-style booking creation test that covers public submission through server persistence without writing test appointments to the live salon database.
+- [x] Add visible booking-status badges inside daily and weekly calendar cards, then re-verify both desktop and mobile calendar modes.
+- [x] Display the salon owner identity consistently in the protected dashboard shell without exposing a browser account email.
+- [x] Match the post-booking WhatsApp redirect to the approved message template, including the international salon number, client location, inclusive companion wording, and booking reference.
+- [x] Update the WhatsApp confirmation for at-home and venue preparation, including the exact “خبيرة التصفيف إيلاف خميس” wording and the location-follow-up note.
+- [x] Add the unique booking reference to the post-booking WhatsApp template and cover the approved message components with a regression test.
+- [x] Make post-booking Google synchronization non-blocking after the internal booking is stored, while recording asynchronous sync results safely.
+- [x] Guard the entire background Google synchronization job against database and transport failures, and handle late calendar conflicts consistently.
+- [x] Add regression coverage for background synchronization read/write failures and late conflict handling.
+- [x] Send each confirmed booking to a Google Sheets management ledger through a secure server-side webhook or Google API integration.
+- [x] Configure the supplied Google Sheets ledger (ID: 1Okg27m5PNVfe8Rr2Zw5rAevPP8p5SVx1mt6_WZn0jyY) as the server-side booking destination.
+- [x] Store the supplied Google Apps Script Web App URL as a server-only integration secret and validate the endpoint configuration.
+- [x] Prepare a copy-ready Google Apps Script web-app endpoint for Sheet logging, Calendar conflict checks, event creation, updates, and cancellation handling.
+- [x] Provide the exact deployment, authorization, Web App URL, and shared-secret setup steps for the Google Apps Script project.
+- [x] Create a Google Calendar event titled with the client name and service, including the preparation location and attendee count in the event details.
+- [x] Keep the customer WhatsApp redirect non-blocking after the booking record and Google synchronization workflow are initiated.
+- [x] Add mobile-friendly booking fields for preparation place, location URL, notes, editable total price, deposit, and automatically calculated balance.
+- [x] Replace prompt-based booking payment editing with responsive visible form fields and inline balance calculation.
+- [x] Add an integration regression test for admin payment updates, including persistence, invalid deposit rejection, and revenue consistency.
+- [x] Make the visible payment editor available for all relevant bookings and add clear save-failure feedback with retry guidance.
+- [x] Add an isolated persistence integration regression test that exercises admin payment persistence, invalid deposit rejection, and linked ledger revenue consistency without writing test data to the live salon database.
+- [x] Map invalid payment values to a clear Arabic administrator-facing validation message.
+- [x] Add the mobile dashboard finance metrics for collected deposits and outstanding balances, alongside today and tomorrow appointments.
+- [x] Enforce the required three-hour mobile-service buffer against time conflicts, including any confirmed Google Calendar event returned by the integration endpoint.
+- [x] Add secure Google synchronization tracking so a booking is recorded at most once in Sheets and can be mapped to its Calendar event.
+- [x] Preserve cancelled bookings as historical records while removing only their mapped Google Calendar event.
+- [x] Complete fast administrator search by client name, telephone number, appointment reference, service, and ISO date, with daily and weekly calendar views, and verify it in the project test suite.
+- [x] Verify search filtering in the CRM client list and show search-specific empty states across administrative results.
+- [x] Run the full project test suite after the administrative search enhancement.
+- [x] Make the live Google Apps Script connectivity check opt-in so external network latency does not fail the local regression suite.
+- [x] Update the deployed Apps Script event-title line to the requested client-name then service ordering and redeploy the Web App.
+- [x] Validate a first live booking transaction creates one Sheet row and one matching Calendar event through the deployed Google endpoint.
+- [x] Send a clearly labelled integration-test booking to the deployed Google endpoint, verify its Sheet row and Calendar event identifiers, then remove the test Calendar event while retaining an auditable cancelled Sheet row.
+- [x] Add direct WhatsApp Business Cloud API booking notifications in Google Apps Script, including an approved Arabic Utility template and safe deployment guidance.
+- [x] Deliver a full copy-and-paste Google Apps Script file for direct WhatsApp Business booking notifications.
+- [x] Update the server-only Google Apps Script Web App URL to the final deployment and validate its authenticated conflict-check response.
+- [x] Restrict the public service catalogue and booking selection to تسريح وتصفيف and باقة العروس, removing معالجات شعر and صبغات متطورة from visible cards and choices.
+- [x] Update the تسريح وتصفيف service price to 250 د.ل. in the live catalogue and default service definition.
+- [x] Locate the live booking spreadsheet, share it as Editor with the salon owner account open in Google, and provide its direct link. **Cancelled by the owner after Google login restrictions; replaced by the internal cloud ledger and Excel-compatible export.**
+- [x] Remove service durations from public service cards and booking service choices, leaving only each service name and price visible.
+- [x] Verify the published site shows only service names and prices, with no duration labels on service cards.
+- [x] Route Google booking synchronization to the user-specified spreadsheet and record each booking's service price in an الإيرادات/المصاريف column. **Cancelled at the owner's request because Google account access was unavailable; the internal cloud ledger is the accepted replacement.**
+- [x] Verify the live service cards contain no duration labels and confirm booking creation persists records to the site's cloud database.
+- [x] Replace Google Drive reliance for financial tracking with an internal cloud database ledger that records confirmed-booking revenue, supports expense entry, and reports totals in the admin dashboard.
+- [x] Capture optional preparation place, map link, and client notes in the four-step booking flow and persist them with each booking.
+- [x] Display preparation, location, client notes, and payment values in administrative booking details.
+- [x] Diagnose and fix the admin dashboard loading/routing failure so bookings and financial summaries render reliably.
+- [x] Add an authenticated CSV export from the admin dashboard containing booking and ledger rows plus revenue, expenses, and net-profit totals for Excel.
+- [x] Correct the CSV summary formula row references so Excel totals point to actual ledger rows.
+- [x] Add a regression test validating the exported financial formulas and their ledger row range.
+- [x] Verify the generated CSV opens with readable Arabic text and correct totals in spreadsheet software.
+- [x] Verify rendered Arabic text and computed financial values in a generated spreadsheet export.
+- [x] Add an automated export regression test for expected revenue, expenses, and net profit on controlled data.

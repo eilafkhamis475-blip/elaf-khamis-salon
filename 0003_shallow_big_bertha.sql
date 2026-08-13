@@ -1,0 +1,1 @@
+ALTER TABLE `salonSettings` ADD `reminderScheduleTaskUid` varchar(65);
